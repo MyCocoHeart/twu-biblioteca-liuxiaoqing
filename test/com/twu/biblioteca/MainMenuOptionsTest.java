@@ -2,10 +2,8 @@ package com.twu.biblioteca;
 
 import org.junit.Test;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 import static org.junit.Assert.*;
 
@@ -39,7 +37,8 @@ public class MainMenuOptionsTest {
         map.put(1, "Books");
         map.put(2, "Others");
         MainMenuOptions mainMenuOptions = new MainMenuOptions(map);
-        String result = map.get(1);
+        Map<Integer, String> resultMap = mainMenuOptions.getMenuOptions();
+        String result = resultMap.get(1);
         String expected = "Books";
         assertEquals(expected,result);
     }

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa3f86b0-6d29-47ab-9dfc-d2d78182018c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/MainMenuOptionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MainMenuOptionsTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -68,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MainMenuOptionsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+            <state relative-caret-position="237">
+              <caret line="42" column="38" lean-forward="true" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#229#230#0" expanded="true" />
@@ -160,7 +161,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565258885430" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565259626730" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -192,7 +193,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MainMenuOptionsTest.returnAEmptyMenuOptions">
+  <component name="RunManager" selected="JUnit.MainMenuOptionsTest.returnAMenuOptions">
     <configuration name="MainMenuOptionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
@@ -274,8 +275,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MainMenuOptionsTest.returnAEmptyMenuOptions" />
         <item itemvalue="JUnit.MainMenuOptionsTest.returnAMenuOptions" />
+        <item itemvalue="JUnit.MainMenuOptionsTest.returnAEmptyMenuOptions" />
         <item itemvalue="JUnit.MainMenuOptionsTest.getMainMenuOptions" />
         <item itemvalue="JUnit.MainMenuOptionsTest.createAMainMenuOptionsObjectWhenGivenAMap" />
         <item itemvalue="JUnit.MainMenuOptionsTest" />
@@ -293,7 +294,7 @@
       <option name="presentableId" value="Default" />
       <updated>1565238488103</updated>
       <workItem from="1565238489248" duration="9412000" />
-      <workItem from="1565248018147" duration="11318000" />
+      <workItem from="1565248018147" duration="11635000" />
     </task>
     <servers />
   </component>
@@ -330,7 +331,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20730000" />
+    <option name="totallyTimeSpent" value="21047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -345,7 +346,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39703155" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39703155" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39888683" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -353,7 +354,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3283859" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3283859" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.49907234" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -475,8 +476,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MainMenuOptionsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+        <state relative-caret-position="237">
+          <caret line="42" column="38" lean-forward="true" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#229#230#0" expanded="true" />
