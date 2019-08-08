@@ -31,11 +31,15 @@ public class WelcomePageTest {
     }
 
     @Test
-    public void shouldPrintWelcomeMassages() {
+    public void shouldPrintWelcomeMessages() {
         String message= "Welocme to Biblioteca. You one-stop-shop for great book titles in Bangalore!";
         WelcomePage welcomePage = new WelcomePage(message);
         welcomePage.showWelcomeMessages();
         String expected = new String("Welocme to Biblioteca. You one-stop-shop for great book titles in Bangalore!");
         assertEquals(expected,bytes.toString().trim().replace("\r",""));
+    }
+
+    public void shouldPrintMainMenuOptionsMessage() {
+
     }
 }

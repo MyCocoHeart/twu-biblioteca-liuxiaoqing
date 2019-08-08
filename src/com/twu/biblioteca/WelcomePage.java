@@ -15,4 +15,5 @@ public class WelcomePage {
     public void showWelcomeMessages() {
         System.out.println(this.welcomeMessage);
     }
+
 }
