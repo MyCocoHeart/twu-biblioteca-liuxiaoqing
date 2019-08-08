@@ -21,4 +21,8 @@ public class MainMenuOptions {
         this.mainMenuMap = map;
     }
 
+    public Map<Integer, String> getMenuOptions() {
+        return this.mainMenuMap;
+    }
+
 }

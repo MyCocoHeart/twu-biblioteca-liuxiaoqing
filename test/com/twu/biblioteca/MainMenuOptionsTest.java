@@ -26,4 +26,12 @@ public class MainMenuOptionsTest {
         MainMenuOptions mainMenuOptions = new MainMenuOptions(map);
     }
 
+    @Test
+    public void returnAEmptyMenuOptions() {
+        MainMenuOptions mainMenuOptions = new MainMenuOptions();
+        Map<Integer, String> map = mainMenuOptions.getMenuOptions();
+        String result = map.get(1);
+        assertEquals(null,result);
+    }
+
 }
