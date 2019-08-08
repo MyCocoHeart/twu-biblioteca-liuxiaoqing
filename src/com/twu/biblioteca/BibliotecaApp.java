@@ -8,7 +8,7 @@ public class BibliotecaApp {
     }
      public void start() {
         String welcomeMessage = "Welocme to Biblioteca. You one-stop-shop for great book titles in Bangalore!";
-         WelcomePage welcomePage = new WelcomePage(welcomeMessage);
+         WelcomeInfo welcomePage = new WelcomeInfo(welcomeMessage);
          welcomePage.showWelcomeMessages();
      }
 }

@@ -13,7 +13,7 @@ import static org.junit.Assert.assertEquals;
  * @author:xiaoq
  * @date:2019/8/8 15:45
  */
-public class WelcomePageTest {
+public class WelcomeInfoTest {
     private PrintStream console = null;
     private ByteArrayOutputStream bytes = null;
 
@@ -33,13 +33,10 @@ public class WelcomePageTest {
     @Test
     public void shouldPrintWelcomeMessages() {
         String message= "Welocme to Biblioteca. You one-stop-shop for great book titles in Bangalore!";
-        WelcomePage welcomePage = new WelcomePage(message);
+        WelcomeInfo welcomePage = new WelcomeInfo(message);
         welcomePage.showWelcomeMessages();
         String expected = new String("Welocme to Biblioteca. You one-stop-shop for great book titles in Bangalore!");
         assertEquals(expected,bytes.toString().trim().replace("\r",""));
     }
 
-    public void shouldPrintMainMenuOptionsMessage() {
-
-    }
 }
