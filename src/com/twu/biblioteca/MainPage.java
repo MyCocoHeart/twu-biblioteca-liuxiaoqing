@@ -12,11 +12,8 @@ public class MainPage {
     private MainMenuOptions mainMenuOptions;
 
     public MainPage() {
-        String welcomeMessage = "Welocme to Biblioteca. You one-stop-shop for great book titles in Bangalore!";
-        this.welcomeInfo = new WelcomeInfo(welcomeMessage);
-        Map<Integer, String> map = new HashMap<Integer, String>();
-        map.put(1, "Books");
-        this.mainMenuOptions = new MainMenuOptions(map);
+        this.welcomeInfo = new WelcomeInfo(DataSources.WELCOMEMESSAGE);
+        this.mainMenuOptions = new MainMenuOptions(DataSources.MENUOPTIONSMAP);
     }
     public void showMessages() {
         showWelcomeMessages();
