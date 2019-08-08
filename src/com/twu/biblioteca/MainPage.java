@@ -29,16 +29,12 @@ public class MainPage {
     }
 
     private void printMenuOptions(Map<Integer,String> map) {
-        String tip;
         if (!isEmptyMenuOptions(map)) {
-            tip = "\n请根据以下选项，选择您需要查看内容:";
-            System.out.println(tip);
             for (Integer key : map.keySet()) {
-                System.out.println("选择" + map.get(key) + "服务,请输入" + key);
+                System.out.println(map.get(key));
             }
         } else {
-            tip = "暂无服务\n";
-            System.out.println(tip);
+            System.out.println("暂无服务\n");
         }
     }
 

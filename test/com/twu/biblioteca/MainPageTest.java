@@ -40,8 +40,7 @@ public class MainPageTest {
         MainPage mainPage = new MainPage();
         mainPage.showMessages();
         String expected = "Welocme to Biblioteca. You one-stop-shop for great book titles in Bangalore!\n" +
-                "\n请根据以下选项，选择您需要查看内容:\n" +
-                "选择Books服务,请输入1";
+                                "List of books";
         assertEquals(expected,bytes.toString().trim().replace("\r",""));
     }
 
