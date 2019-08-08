@@ -17,4 +17,8 @@ public class MainMenuOptions {
          this.mainMenuMap = new HashMap<Integer, String>();
     }
 
+    public MainMenuOptions(Map<Integer,String> map) {
+        this.mainMenuMap = map;
+    }
+
 }
