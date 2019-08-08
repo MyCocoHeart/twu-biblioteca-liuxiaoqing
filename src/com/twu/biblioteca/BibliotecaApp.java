@@ -3,9 +3,12 @@ package com.twu.biblioteca;
 public class BibliotecaApp {
 
     public static void main(String[] args) {
-        System.out.println("Hello, world!");
+        BibliotecaApp bibliotecaApp = new BibliotecaApp();
+        bibliotecaApp.start();
     }
-     public static  void start() {
-        String welcome_message = "Welocme to Biblioteca. You one-stop-shop for great book titles in Bangalore!";
+     public void start() {
+        String welcomeMessage = "Welocme to Biblioteca. You one-stop-shop for great book titles in Bangalore!";
+         WelcomePage welcomePage = new WelcomePage(welcomeMessage);
+         welcomePage.showWelcomeMessages();
      }
 }
