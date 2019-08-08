@@ -43,4 +43,15 @@ public class MainMenuOptionsTest {
         assertEquals(expected,result);
     }
 
+    @Test
+    public void addAOption() {
+        MainMenuOptions mainMenuOptions = new MainMenuOptions();
+        mainMenuOptions.addOption(1,"Books");
+        Map<Integer, String> resultMap = mainMenuOptions.getMenuOptions();
+        Integer result = resultMap.size();
+        Integer expected = 1;
+        assertEquals(expected,result);
+
+    }
+
 }

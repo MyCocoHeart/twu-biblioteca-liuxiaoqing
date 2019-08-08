@@ -24,5 +24,8 @@ public class MainMenuOptions {
     public Map<Integer, String> getMenuOptions() {
         return this.mainMenuMap;
     }
+    public void addOption(Integer key,String value) {
+        this.mainMenuMap.put(key, value);
+    }
 
 }
