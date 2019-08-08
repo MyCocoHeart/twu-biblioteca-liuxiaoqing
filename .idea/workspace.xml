@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa3f86b0-6d29-47ab-9dfc-d2d78182018c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/MainMenuOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/MainMenuOptions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/MainMenuOptionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MainMenuOptionsTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -69,13 +68,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MainMenuOptionsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="80">
+              <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#229#230#0" expanded="true" />
                 <element signature="e#299#300#0" expanded="true" />
                 <element signature="e#511#528#0" expanded="true" />
+                <element signature="e#1035#1052#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -160,7 +160,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565258686784" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565258885430" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -192,20 +192,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MainMenuOptionsTest.getMainMenuOptions">
-    <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
-      <module name="biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MainMenuOptionsTest.returnAEmptyMenuOptions">
     <configuration name="MainMenuOptionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
@@ -217,22 +204,6 @@
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MainMenuOptionsTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainMenuOptionsTest.createAMainMenuOptionsObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MainMenuOptionsTest" />
-      <option name="METHOD_NAME" value="createAMainMenuOptionsObject" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -269,13 +240,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainMenuOptionsTest.returnAEmptyMenuOptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MainMenuOptionsTest" />
+      <option name="METHOD_NAME" value="returnAEmptyMenuOptions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainMenuOptionsTest.returnAMenuOptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MainMenuOptionsTest" />
+      <option name="METHOD_NAME" value="returnAMenuOptions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MainMenuOptionsTest.returnAEmptyMenuOptions" />
+        <item itemvalue="JUnit.MainMenuOptionsTest.returnAMenuOptions" />
         <item itemvalue="JUnit.MainMenuOptionsTest.getMainMenuOptions" />
         <item itemvalue="JUnit.MainMenuOptionsTest.createAMainMenuOptionsObjectWhenGivenAMap" />
         <item itemvalue="JUnit.MainMenuOptionsTest" />
-        <item itemvalue="JUnit.MainMenuOptionsTest.createAMainMenuOptionsObject" />
-        <item itemvalue="Application.BibliotecaApp" />
       </list>
     </recent_temporary>
   </component>
@@ -290,17 +293,11 @@
       <option name="presentableId" value="Default" />
       <updated>1565238488103</updated>
       <workItem from="1565238489248" duration="9412000" />
-      <workItem from="1565248018147" duration="10517000" />
+      <workItem from="1565248018147" duration="11318000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WelcomePageTest_shouldPrintWelcomeMassages - 2019.08.08 at 15h 57m 13s.xml">
-      <configuration name="WelcomePageTest.shouldPrintWelcomeMassages" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WelcomePageTest_shouldPrintWelcomeMassages - 2019.08.08 at 15h 57m 24s.xml">
-      <configuration name="WelcomePageTest.shouldPrintWelcomeMassages" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="WelcomePageTest_shouldPrintWelcomeMassages - 2019.08.08 at 16h 11m 44s.xml">
       <configuration name="WelcomePageTest.shouldPrintWelcomeMassages" configurationId="JUnit" />
     </history-entry>
@@ -325,9 +322,15 @@
     <history-entry file="MainMenuOptionsTest_getMainMenuOptions - 2019.08.08 at 18h 02m 57s.xml">
       <configuration name="MainMenuOptionsTest.getMainMenuOptions" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MainMenuOptionsTest_returnAMenuOptions - 2019.08.08 at 18h 07m 54s.xml">
+      <configuration name="MainMenuOptionsTest.returnAMenuOptions" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainMenuOptionsTest_returnAEmptyMenuOptions - 2019.08.08 at 18h 08m 07s.xml">
+      <configuration name="MainMenuOptionsTest.returnAEmptyMenuOptions" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19929000" />
+    <option name="totallyTimeSpent" value="20730000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -472,13 +475,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MainMenuOptionsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        <state relative-caret-position="80">
+          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#229#230#0" expanded="true" />
             <element signature="e#299#300#0" expanded="true" />
             <element signature="e#511#528#0" expanded="true" />
+            <element signature="e#1035#1052#0" expanded="true" />
           </folding>
         </state>
       </provider>

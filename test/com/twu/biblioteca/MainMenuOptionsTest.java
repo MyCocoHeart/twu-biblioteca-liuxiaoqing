@@ -33,5 +33,15 @@ public class MainMenuOptionsTest {
         String result = map.get(1);
         assertEquals(null,result);
     }
+    @Test
+    public void returnAMenuOptions() {
+        Map<Integer, String> map = new HashMap<Integer, String>();
+        map.put(1, "Books");
+        map.put(2, "Others");
+        MainMenuOptions mainMenuOptions = new MainMenuOptions(map);
+        String result = map.get(1);
+        String expected = "Books";
+        assertEquals(expected,result);
+    }
 
 }
