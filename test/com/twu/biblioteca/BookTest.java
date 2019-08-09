@@ -4,6 +4,8 @@ package com.twu.biblioteca;
 import org.junit.Test;
 
 
+import java.io.StringReader;
+
 import static org.junit.Assert.*;
 
 /**
@@ -58,5 +60,17 @@ public class BookTest {
         Book book = new Book(id,name,authors,publishedYear);
         String result = book.getAuthors();
         assertEquals("Barry",result);
+    }
+    @Test
+    public void getBooksInfo() {
+        Integer id = 1;
+        String name = "Head First Python";
+        String authors = "Barry";
+        String publishedYear = "2010";
+        Book book = new Book(id,name,authors,publishedYear);
+        String result = book.getTotalInfo();
+        String expected = "Head First Python|Barry|2010";
+        assertEquals(expected,result);
+
     }
 }

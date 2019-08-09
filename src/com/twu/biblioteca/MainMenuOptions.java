@@ -28,4 +28,15 @@ public class MainMenuOptions {
         this.mainMenuMap.put(key, value);
     }
 
+    public static Integer getOptionKey(String value,Map<Integer,String> map) {
+        Integer key=-1;
+        for (Map.Entry<Integer,String> entry : map.entrySet()) {
+            if(value.equals(entry.getValue())){
+                key=entry.getKey();
+            }
+        }
+        return key;
+
+    }
+
 }

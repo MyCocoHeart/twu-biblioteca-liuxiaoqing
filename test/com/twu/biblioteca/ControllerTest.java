@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
-import java.sql.SQLIntegrityConstraintViolationException;
+
 
 import static org.junit.Assert.*;
 
@@ -30,7 +30,18 @@ public class ControllerTest {
 
         }
         String expected = data;
-        assertEquals(data,input);
+        assertEquals(expected,input);
     }
+
+    @Test
+    public void showBooksInfo() {
+        Controller controller = new Controller();
+        String result = controller.getAllBooks(DataSources.BOOKS);
+        String expected = "name|author|year of publication\n" +
+                "Head First Python|Barry|2010\n" +
+                "Head First Java|KathySierra|2007\n";
+        assertEquals(expected,result);
+    }
+
 
 }

@@ -1,6 +1,5 @@
 package com.twu.biblioteca;
 
-import java.util.Scanner;
 
 public class BibliotecaApp {
 
@@ -10,7 +9,20 @@ public class BibliotecaApp {
 
     }
      public void start() {
-         MainPage mainPage = new MainPage();
-         mainPage.showMessages();
+         showWelcomePage();
+         Controller controller = new Controller();
+         controller.begin();
+         System.out.println("Please input your service option:");
+         Integer optionKey = controller.getOptions();
+         controller.close();
+         if (optionKey == 1) {
+             controller.showListOfBooks(DataSources.BOOKS);
+         }
+
      }
+
+    private static void showWelcomePage() {
+        MainPage mainPage = new MainPage();
+        mainPage.showMessages();
+    }
 }

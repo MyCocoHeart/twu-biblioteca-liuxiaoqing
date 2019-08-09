@@ -32,4 +32,8 @@ public class Book {
         this.authors = authors;
         this.publishedYear = publishedYear;
     }
+    public String getTotalInfo() {
+        return name+"|"+authors+"|"+publishedYear;
+    }
+
 }
