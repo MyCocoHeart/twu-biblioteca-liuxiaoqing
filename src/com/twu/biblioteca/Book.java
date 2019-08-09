@@ -1,5 +1,10 @@
 package com.twu.biblioteca;
 
+import org.omg.CORBA.TypeCodePackage.BadKind;
+
+import java.util.ArrayList;
+import java.util.Map;
+
 /**
  * @author:xiaoq
  * @date:2019/8/9 12:40
@@ -9,6 +14,15 @@ public class Book {
     private String name;
     private String authors;
     private String publishedYear;
+    private Boolean checkStatus = false;
+
+    public Boolean getCheckStatus() {
+        return this.checkStatus;
+    }
+
+    private void setCheckStatus(Boolean checkStatus) {
+        this.checkStatus = checkStatus;
+    }
 
     public String getName() {
         return name;
@@ -26,14 +40,74 @@ public class Book {
         return publishedYear;
     }
 
-    public Book(Integer id, String name,String authors, String publishedYear) {
+    public Book(Integer id, String name, String authors, String publishedYear) {
         this.bookId = id;
         this.name = name;
         this.authors = authors;
         this.publishedYear = publishedYear;
     }
+
     public String getTotalInfo() {
-        return name+"|"+authors+"|"+publishedYear;
+        return name + "|" + authors + "|" + publishedYear;
+    }
+
+    public void checkout() {
+        if (isChecked()) {
+            showCheckoutFailedNotes();
+        } else {
+            setCheckStatus(true);
+            showCheckoutSuccessNotes();
+        }
+    }
+
+    public void returnBook() {
+        if (isBelongToLibrary() && isChecked()) {
+            setCheckStatus(false);
+            showReturnSuccessNotes();
+        } else {
+            showReturnFailedNotes();
+        }
+    }
+
+    private boolean isBelongToLibrary() {
+        for (Book book : DataSources.BOOKS) {
+            if (book.getName().equals(this.name)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+    private boolean isChecked() {
+        return getCheckStatus();
+    }
+
+    private void showCheckoutSuccessNotes() {
+        System.out.println(DataSources.CHECKOUTSUCCESSFULNOTES);
+    }
+
+    private void showCheckoutFailedNotes() {
+        System.out.println(DataSources.CHECKOUTUNSUCCESSFULNOTES);
+    }
+
+    private void showReturnSuccessNotes() {
+        System.out.println(DataSources.RETURNSUCCESSFULNOTES);
+    }
+
+    private void showReturnFailedNotes() {
+        System.out.println(DataSources.RETURNFAILEDNOTES);
+    }
+
+    public static Book getBookByName(String name, ArrayList<Book> books) {
+        for (Book book : books) {
+            if (isNameEqual(name, book)) return book;
+        }
+        return null;
+    }
+
+    private static boolean isNameEqual(String name, Book book) {
+        return book.getName().equals(name);
     }
 
 }

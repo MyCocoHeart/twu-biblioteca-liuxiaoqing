@@ -1,5 +1,7 @@
 package com.twu.biblioteca;
 
+import com.sun.xml.internal.ws.api.ha.StickyFeature;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -9,12 +11,25 @@ import java.util.Map;
  * @date:2019/8/8 20:16
  */
 public class DataSources {
-    public static final String WELCOMEMESSAGE= "Welocme to Biblioteca. You one-stop-shop for great book titles in Bangalore!";
-    public static final Map<Integer,String> MENUOPTIONSMAP= new HashMap<Integer, String>() {{put(1, "List of books");}};
+    public static final String WELCOMEMESSAGE = "Welocme to Biblioteca. You one-stop-shop for great book titles in Bangalore!";
+    public static final Map<Integer, String> MENUOPTIONSMAP = new HashMap<Integer, String>();
     public static final ArrayList<Book> BOOKS = new ArrayList<Book>();
     public static final String OPTIONNOTIFIEDMESSAGE = "Please select a valid option!";
+    public static final String CHECKOUTSUCCESSFULNOTES = "Thank you! Enjoy the book";
+    public static final String CHECKOUTUNSUCCESSFULNOTES = "Sorry, that book is not available";
+    public static final String RETURNSUCCESSFULNOTES = "Thank you for returning the book";
+    public static final String RETURNFAILEDNOTES = "That is not a valid book to return";
+
     static {
-        BOOKS.add(new Book(1,"Head First Python","Barry","2010"));
-        BOOKS.add(new Book(2,"Head First Java","KathySierra","2007"));
+        MENUOPTIONSMAP.put(1, "List of books");
+        MENUOPTIONSMAP.put(2, "Checkout a book");
+        MENUOPTIONSMAP.put(3, "Return a book");
+        MENUOPTIONSMAP.put(4, "Quit the application");
     }
+
+    static {
+        BOOKS.add(new Book(1, "Head First Python", "Barry", "2010"));
+        BOOKS.add(new Book(2, "Head First Java", "KathySierra", "2007"));
+    }
+
 }

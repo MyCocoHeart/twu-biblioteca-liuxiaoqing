@@ -15,20 +15,22 @@ public class MainPage {
         this.welcomeInfo = new WelcomeInfo(DataSources.WELCOMEMESSAGE);
         this.mainMenuOptions = new MainMenuOptions(DataSources.MENUOPTIONSMAP);
     }
+
     public void showMessages() {
         showWelcomeMessages();
         showMainMenuOptions();
     }
+
     private void showWelcomeMessages() {
         this.welcomeInfo.showWelcomeMessages();
     }
 
     private void showMainMenuOptions() {
-        Map<Integer,String> map = getMenuOptions();
+        Map<Integer, String> map = getMenuOptions();
         printMenuOptions(map);
     }
 
-    private void printMenuOptions(Map<Integer,String> map) {
+    private void printMenuOptions(Map<Integer, String> map) {
         if (!isEmptyMenuOptions(map)) {
             for (Integer key : map.keySet()) {
                 System.out.println(map.get(key));
@@ -41,7 +43,8 @@ public class MainPage {
     private Map<Integer, String> getMenuOptions() {
         return this.mainMenuOptions.getMenuOptions();
     }
-    private boolean isEmptyMenuOptions(Map<Integer,String > map) {
+
+    private boolean isEmptyMenuOptions(Map<Integer, String> map) {
         return map.isEmpty();
     }
 
