@@ -3,6 +3,7 @@ package com.twu.biblioteca.control;
 import com.twu.biblioteca.model.Book;
 import com.twu.biblioteca.db.DataSources;
 import com.twu.biblioteca.model.MainMenuOptions;
+import com.twu.biblioteca.model.Movie;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -47,5 +48,16 @@ public class Controller {
     public void showListOfBooks(ArrayList<Book> books) {
         System.out.print(getAllBooks(books));
     }
+
+    public String getAllMovies(ArrayList<Movie> movies) {
+        String result = "name|year|director|rating\n";
+        for (Movie movie : movies) {
+            if (!movie.isCheckouted()) {
+                result += movie.getTotalInfo() + "\n";
+            }
+        }
+        return result;
+    }
+
 
 }
