@@ -1,6 +1,9 @@
-package com.twu.biblioteca;
+package com.twu.biblioteca.control;
 
-import java.sql.ResultSet;
+import com.twu.biblioteca.model.Book;
+import com.twu.biblioteca.db.DataSources;
+import com.twu.biblioteca.model.MainMenuOptions;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

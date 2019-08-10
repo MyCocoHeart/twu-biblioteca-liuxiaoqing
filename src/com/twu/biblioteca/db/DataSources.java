@@ -1,6 +1,6 @@
-package com.twu.biblioteca;
+package com.twu.biblioteca.db;
 
-import com.sun.xml.internal.ws.api.ha.StickyFeature;
+import com.twu.biblioteca.model.Book;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,7 +24,8 @@ public class DataSources {
         MENUOPTIONSMAP.put(1, "List of books");
         MENUOPTIONSMAP.put(2, "Checkout a book");
         MENUOPTIONSMAP.put(3, "Return a book");
-        MENUOPTIONSMAP.put(4, "Quit the application");
+        MENUOPTIONSMAP.put(4, "List of movies");
+        MENUOPTIONSMAP.put(5, "Quit the application");
     }
 
     static {

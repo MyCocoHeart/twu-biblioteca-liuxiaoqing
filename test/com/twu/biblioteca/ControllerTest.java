@@ -1,5 +1,7 @@
 package com.twu.biblioteca;
 
+import com.twu.biblioteca.control.Controller;
+import com.twu.biblioteca.db.DataSources;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;

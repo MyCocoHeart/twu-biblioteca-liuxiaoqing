@@ -1,6 +1,11 @@
 package com.twu.biblioteca;
 
 
+import com.twu.biblioteca.control.Controller;
+import com.twu.biblioteca.db.DataSources;
+import com.twu.biblioteca.model.Book;
+import com.twu.biblioteca.model.MainPage;
+
 public class BibliotecaApp {
 
     public static void main(String[] args) {
@@ -35,12 +40,14 @@ public class BibliotecaApp {
                     tipFlag = true;
                     break;
                 case 4:
+                    System.out.println("show movies");
+                    break;
+                case 5:
                     controller.close();
                     return;
                 default:
                     System.out.println(DataSources.OPTIONNOTIFIEDMESSAGE);
                     tipFlag = false;
-
             }
         }
     }

@@ -1,6 +1,7 @@
-package com.twu.biblioteca;
+package com.twu.biblioteca.model;
 
-import java.util.HashMap;
+import com.twu.biblioteca.db.DataSources;
+
 import java.util.Map;
 
 /**
