@@ -17,24 +17,8 @@ public class Movie {
     private String rating;
     private boolean isCheckouted;
 
-    public Integer getId() {
-        return id;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public String getYear() {
-        return year;
-    }
-
-    public String getDirector() {
-        return director;
-    }
-
-    public String getRating() {
-        return rating;
     }
 
     public boolean isCheckouted() {
