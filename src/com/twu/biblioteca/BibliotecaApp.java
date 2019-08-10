@@ -40,9 +40,11 @@ public class BibliotecaApp {
                     tipFlag = true;
                     break;
                 case 4:
-                    System.out.println("show movies");
-                    break;
+                    controller.showListOfMovies(DataSources.MOVIES);
+                   return;
                 case 5:
+                    //checkout a movie
+                case 6:
                     controller.close();
                     return;
                 default:

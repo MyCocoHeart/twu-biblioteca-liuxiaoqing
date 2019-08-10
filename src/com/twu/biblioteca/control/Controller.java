@@ -58,6 +58,8 @@ public class Controller {
         }
         return result;
     }
-
+    public void showListOfMovies(ArrayList<Movie>movies) {
+        System.out.println(getAllMovies(movies));
+    }
 
 }

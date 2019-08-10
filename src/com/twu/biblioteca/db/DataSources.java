@@ -26,7 +26,8 @@ public class DataSources {
         MENUOPTIONSMAP.put(2, "Checkout a book");
         MENUOPTIONSMAP.put(3, "Return a book");
         MENUOPTIONSMAP.put(4, "List of movies");
-        MENUOPTIONSMAP.put(5, "Quit the application");
+        MENUOPTIONSMAP.put(5, "Checkout a movie");
+        MENUOPTIONSMAP.put(6, "Quit the application");
     }
 
     static {
