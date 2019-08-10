@@ -14,9 +14,11 @@ import java.util.Map;
 public class DataSources {
     public static final String WELCOMEMESSAGE = "Welocme to Biblioteca. You one-stop-shop for great book titles in Bangalore!";
     public static final String OPTIONNOTIFIEDMESSAGE = "Please select a valid option!";
-    public static final String CHECKOUTSUCCESSFULNOTES = "Thank you! Enjoy the book";
-    public static final String CHECKOUTUNSUCCESSFULNOTES = "Sorry, that book is not available";
+    public static final String CHECKOUTBOOKSUCCESSFULNOTES = "Thank you! Enjoy the book";
+    public static final String CHECKOUTBOOKUNSUCCESSFULNOTES = "Sorry, that book is not available";
     public static final String RETURNSUCCESSFULNOTES = "Thank you for returning the book";
+    public static final String CHECKOUTMOVIESUCCESSFULNOTES = "Thank you! Enjoy the movie";
+    public static final String CHECKOUTMOVIEUNSUCCESSFULNOTES = "Sorry, that movie is not available";
     public static final String RETURNFAILEDNOTES = "That is not a valid book to return";
     public static final Map<Integer, String> MENUOPTIONSMAP = new HashMap<Integer, String>();
     public static final ArrayList<Book> BOOKS = new ArrayList<Book>();

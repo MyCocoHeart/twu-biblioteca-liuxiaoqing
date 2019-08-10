@@ -77,17 +77,16 @@ public class Book {
         return false;
     }
 
-
     private boolean isChecked() {
         return getCheckStatus();
     }
 
     private void showCheckoutSuccessNotes() {
-        System.out.println(DataSources.CHECKOUTSUCCESSFULNOTES);
+        System.out.println(DataSources.CHECKOUTBOOKSUCCESSFULNOTES);
     }
 
     private void showCheckoutFailedNotes() {
-        System.out.println(DataSources.CHECKOUTUNSUCCESSFULNOTES);
+        System.out.println(DataSources.CHECKOUTBOOKUNSUCCESSFULNOTES);
     }
 
     private void showReturnSuccessNotes() {

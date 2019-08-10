@@ -5,6 +5,7 @@ import com.twu.biblioteca.control.Controller;
 import com.twu.biblioteca.db.DataSources;
 import com.twu.biblioteca.model.Book;
 import com.twu.biblioteca.model.MainPage;
+import com.twu.biblioteca.model.Movie;
 
 public class BibliotecaApp {
 
@@ -41,9 +42,13 @@ public class BibliotecaApp {
                     break;
                 case 4:
                     controller.showListOfMovies(DataSources.MOVIES);
-                   return;
+                    tipFlag = true;
+                    break;
                 case 5:
-                    //checkout a movie
+                    System.out.println("Please input the name of movie you want to checkout:");
+                    checkoutMovie(controller);
+                    tipFlag = true;
+                    break;
                 case 6:
                     controller.close();
                     return;
@@ -65,10 +70,21 @@ public class BibliotecaApp {
             String selectName = controller.getInput();
             selectBook = Book.getBookByName(selectName, DataSources.BOOKS);
             if (selectBook == null) {
-                System.out.println(DataSources.CHECKOUTUNSUCCESSFULNOTES);
+                System.out.println(DataSources.CHECKOUTBOOKUNSUCCESSFULNOTES);
             }
         }
         selectBook.checkout();
+    }
+    private static void checkoutMovie(Controller controller) {
+        Movie selectMovie = null;
+        while (selectMovie == null) {
+            String name = controller.getInput();
+            selectMovie = Movie.getMovieByName(name, DataSources.MOVIES);
+            if (selectMovie == null) {
+                System.out.println(DataSources.CHECKOUTMOVIEUNSUCCESSFULNOTES);
+            }
+        }
+        selectMovie.checkout();
     }
 
     private static void returnBook(Controller controller) {

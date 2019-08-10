@@ -1,6 +1,9 @@
 package com.twu.biblioteca.model;
 
+import com.twu.biblioteca.db.DataSources;
 import sun.management.ThreadInfoCompositeData;
+
+import java.util.ArrayList;
 
 /**
  * @author:xiaoq
@@ -53,4 +56,26 @@ public class Movie {
     public String getTotalInfo() {
         return name+ "|"+year+ "|"+director+ "|"+rating;
     }
+
+    public static Movie getMovieByName(String name, ArrayList<Movie> movies) {
+        for (Movie movie : movies) {
+            if (movie.getName().equals(name)) return movie;
+        }
+        return null;
+    }
+    public void checkout() {
+        if (isCheckouted()) {
+            showCheckoutFailedNotes();
+        } else {
+            setCheckouted(true);
+            showCheckoutSuccessNotes();
+        }
+    }
+    private void showCheckoutFailedNotes() {
+        System.out.println(DataSources.CHECKOUTMOVIEUNSUCCESSFULNOTES);
+    }
+    private void showCheckoutSuccessNotes() {
+        System.out.println(DataSources.CHECKOUTMOVIESUCCESSFULNOTES);
+    }
+
 }
