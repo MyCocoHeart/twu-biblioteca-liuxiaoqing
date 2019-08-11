@@ -15,4 +15,20 @@ public class UserTest {
         User user = new User(1, "zhang-xiaoHong", "12345@163.com", "18209271624", "123456");
     }
 
+    @Test
+    public void returnUserName() {
+        User user = new User(1, "zhang-xiaoHong", "12345@163.com", "18209271624", "123456");
+        String result = user.getName();
+        String expected = "zhang-xiaoHong";
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void returnUserPassword() {
+        User user = new User(1, "zhang-xiaoHong", "12345@163.com", "18209271624", "123456");
+        String result = user.getPassword();
+        String expected = "123456";
+        assertEquals(expected, result);
+    }
+
 }

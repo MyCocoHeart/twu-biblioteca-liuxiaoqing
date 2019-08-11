@@ -18,58 +18,63 @@ public class BookTest {
         String name = "Head First Python";
         String authors = "Barry";
         String publishedYear = "2010";
-        Book book = new Book(id,name,authors,publishedYear);
+        Book book = new Book(id, name, authors, publishedYear);
     }
+
     @Test
     public void getBooksname() {
         Integer id = 1;
         String name = "Head First Python";
         String authors = "Barry";
         String publishedYear = "2010";
-        Book book = new Book(id,name,authors,publishedYear);
+        Book book = new Book(id, name, authors, publishedYear);
         String result = book.getName();
-        assertEquals("Head First Python",result);
+        assertEquals("Head First Python", result);
     }
+
     @Test
     public void getBooksId() {
         Integer id = 1;
         String name = "Head First Python";
         String authors = "Barry";
         String publishedYear = "2010";
-        Book book = new Book(id,name,authors,publishedYear);
+        Book book = new Book(id, name, authors, publishedYear);
         Integer result = book.getBookId();
-        assertEquals(id,result);
+        assertEquals(id, result);
     }
+
     @Test
     public void getBooksPublishedYear() {
         Integer id = 1;
         String name = "Head First Python";
         String authors = "Barry";
         String publishedYear = "2010";
-        Book book = new Book(id,name,authors,publishedYear);
+        Book book = new Book(id, name, authors, publishedYear);
         String result = book.getPublishedYear();
-        assertEquals("2010",result);
+        assertEquals("2010", result);
     }
+
     @Test
     public void getBooksAuthor() {
         Integer id = 1;
         String name = "Head First Python";
         String authors = "Barry";
         String publishedYear = "2010";
-        Book book = new Book(id,name,authors,publishedYear);
+        Book book = new Book(id, name, authors, publishedYear);
         String result = book.getAuthors();
-        assertEquals("Barry",result);
+        assertEquals("Barry", result);
     }
+
     @Test
     public void getBooksInfo() {
         Integer id = 1;
         String name = "Head First Python";
         String authors = "Barry";
         String publishedYear = "2010";
-        Book book = new Book(id,name,authors,publishedYear);
+        Book book = new Book(id, name, authors, publishedYear);
         String result = book.getTotalInfo();
         String expected = "Head First Python|Barry|2010";
-        assertEquals(expected,result);
+        assertEquals(expected, result);
 
     }
 }

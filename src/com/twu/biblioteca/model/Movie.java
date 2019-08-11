@@ -1,7 +1,5 @@
 package com.twu.biblioteca.model;
-
 import com.twu.biblioteca.db.DataSources;
-import sun.management.ThreadInfoCompositeData;
 
 import java.util.ArrayList;
 
@@ -29,7 +27,7 @@ public class Movie {
         isCheckouted = checkouted;
     }
 
-    public Movie(Integer id,String name,String year,String director,String rating) {
+    public Movie(Integer id, String name, String year, String director, String rating) {
         this.id = id;
         this.name = name;
         this.year = year;
@@ -37,8 +35,9 @@ public class Movie {
         this.rating = rating;
         this.isCheckouted = false;
     }
+
     public String getTotalInfo() {
-        return name+ "|"+year+ "|"+director+ "|"+rating;
+        return name + "|" + year + "|" + director + "|" + rating;
     }
 
     public static Movie getMovieByName(String name, ArrayList<Movie> movies) {
@@ -47,17 +46,21 @@ public class Movie {
         }
         return null;
     }
-    public void checkout() {
+
+    public void checkout(User user) {
         if (isCheckouted()) {
             showCheckoutFailedNotes();
         } else {
             setCheckouted(true);
+            user.addCheckedOutMoviesID(this.id);
             showCheckoutSuccessNotes();
         }
     }
+
     private void showCheckoutFailedNotes() {
         System.out.println(DataSources.CHECKOUTMOVIEUNSUCCESSFULNOTES);
     }
+
     private void showCheckoutSuccessNotes() {
         System.out.println(DataSources.CHECKOUTMOVIESUCCESSFULNOTES);
     }

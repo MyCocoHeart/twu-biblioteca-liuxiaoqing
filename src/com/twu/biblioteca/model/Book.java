@@ -1,5 +1,4 @@
 package com.twu.biblioteca.model;
-
 import com.twu.biblioteca.db.DataSources;
 
 import java.util.ArrayList;
@@ -50,18 +49,20 @@ public class Book {
         return name + "|" + authors + "|" + publishedYear;
     }
 
-    public void checkout() {
+    public void checkout(User user) {
         if (isChecked()) {
             showCheckoutFailedNotes();
         } else {
             setCheckStatus(true);
+            user.addCheckedOutBooksID(this.bookId);
             showCheckoutSuccessNotes();
         }
     }
 
-    public void returnBook() {
+    public void returnBook(User user) {
         if (isBelongToLibrary() && isChecked()) {
             setCheckStatus(false);
+            user.removeCheckedOutBooksID(this.bookId);
             showReturnSuccessNotes();
         } else {
             showReturnFailedNotes();
@@ -106,6 +107,13 @@ public class Book {
 
     private static boolean isNameEqual(String name, Book book) {
         return book.getName().equals(name);
+    }
+
+    public static Book getBookById(Integer id, ArrayList<Book> books) {
+        for (Book book : books) {
+            if (id == book.bookId) return book;
+        }
+        return null;
     }
 
 }

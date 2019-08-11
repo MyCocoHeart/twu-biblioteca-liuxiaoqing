@@ -2,12 +2,9 @@ package com.twu.biblioteca;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-
-import static org.junit.Assert.*;
 
 /**
  * @author:xiaoq
@@ -25,18 +22,12 @@ public class BibliotecaAppTest {
         System.setOut(new PrintStream(bytes));
 
     }
+
     @After
     public void tearDown() {
         System.setOut(console);
     }
 
 
-    @Test
-    public void shouldPrintWelcomeMessages() {
-        BibliotecaApp bibliotecaApp = new BibliotecaApp();
-        bibliotecaApp.start();
-        String expected = new String("Welocme to Biblioteca. You one-stop-shop for great book titles in Bangalore!");
-        assertEquals(expected,bytes.toString().trim().replace("\r",""));
 
-    }
 }
